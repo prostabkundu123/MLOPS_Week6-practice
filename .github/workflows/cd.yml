@@ -145,4 +145,4 @@ jobs:
           kubectl set image deployment/iris-fastapi iris-fastapi=${IMAGE_FULL_NAME} --namespace ${K8S_NAMESPACE:-default}
 
           # Wait for rollout completion
-          kubectl rollout status deployment/iris-fastapi --namespace ${K8S_NAMESPACE:-default} --timeout=300s
+          kubectl rollout status deployment/iris-fastapi --namespace ${K8S_NAMESPACE:-default} --timeout=600s
